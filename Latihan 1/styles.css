@@ -1,0 +1,133 @@
+html, body {
+    background-color: white;
+    height: 95vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    height: 100%;
+  }
+  
+    div {
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    color: greenyellow;
+    background-color: greenyellow;
+  }
+
+  .item2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    color: orange;
+    background-color: orange;
+  }
+
+  .item3{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5; 
+    color: orange;
+    background-color: orange;
+  }
+
+  .item4 {
+    grid-column-start: 7;
+    grid-column-end: 10; 
+    grid-row-start: 3;
+    grid-row-end: 5;
+    color: orange;
+    background-color: orange;
+  }
+
+  .item5{
+    grid-column-start: 10;
+    grid-column-end: 13; 
+    grid-row-start: 3;
+    grid-row-end: 5;
+    color: orange;
+    background-color: orange;
+  }
+
+  .item6 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    color: orange;
+    background-color: orange;
+  }
+
+  .item7 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    color: orange;
+    background-color: orange;
+  }
+
+  .item8 {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    color: orange;
+    background-color: orange;
+  }
+
+  .item9 {
+    grid-column-start: 11;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    color: orange;
+    background-color: orange;
+  }
+
+  .item10 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    color: greenyellow;
+    background-color: greenyellow;
+  }
+
+  .item11 {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    color: greenyellow;
+    background-color: greenyellow;
+  }
+
+  .item12 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 10;
+    grid-row-end: 11;
+    color: rgb(163, 88, 33);
+    background-color: rgb(163, 88, 33);
+  }
+
+  .item13 {
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 9;
+    grid-row-end: 11;
+    color: rgb(163, 88, 33);
+    background-color: rgb(163, 88, 33);
+  }
+
+  
