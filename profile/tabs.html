@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lora&family=Oswald:wght@500&family=Playfair+Display&display=swap');
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Lora', serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #383838;
+      }
+
+      #container {
+        margin: auto;
+        width: 50%;
+      }
+
+      .column {
+        float: left;
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .row:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      .tablink {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        color: #383838;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 0;
+        font-size: 16px;
+        width: 33.33%;
+        text-align: left;
+      }
+
+      .tabcontent {
+        color: #383838;
+        display: none;
+      }
+
+      .mt-3 {
+        margin-top: 3rem;
+      }
+
+      .mt-5 {
+        margin-top: 5rem;
+      }
+
+      .mb-5 {
+        margin-bottom: 5rem;
+      }
+
+      .mb-3 {
+        margin-bottom: 3rem;
+      }
+
+      .mb-2 {
+        margin-bottom: 2rem;
+      }
+
+      .name {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 0.8;
+      }
+      button {
+        background-color: white;
+      }
+      .footer {
+        text-align: center;
+      }
+
+      .footer img {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="row mb-2">
+        <div class="column" style="padding-left: 0">
+          <button
+            class="tablink"
+            onclick="openCity('About Me', this, 'underline')"
+            id="defaultOpen"
+          >
+            ABOUT ME
+          </button>
+          <button
+            class="tablink"
+            onclick="openCity('Experience', this, 'underline')"
+          >
+            EXPERIENCE
+          </button>
+          <button
+            class="tablink"
+            onclick="openCity('Skills', this, 'underline')"
+          >
+            SKILLS
+          </button>
+        </div>
+        <div class="column" style="text-align: right; padding-top: 5px">
+          <div class="pointer" style="cursor: pointer">
+            <img src="https://img.icons8.com/dotty/50/000000/c.png" />
+            <img src="https://img.icons8.com/dotty/50/000000/wrauter.png" />
+          </div>
+        </div>
+      </div>
+
+      <div id="About Me" class="tabcontent">
+        <div class="row">
+          <div class="column">
+            <div class="mt-5">
+              <h1 class="name">Cynthia</h1>
+              <h1 class="name" style="text-align: right">Wijaya</h1>
+              <p class="mt-3">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged
+              </p>
+              <p class="mt-3">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+            </div>
+          </div>
+          <div class="column" style="text-align: center">
+            <img src="./profile-photo.jpg" alt="pp" width="90%" />
+          </div>
+        </div>
+      </div>
+
+      <div id="Experience" class="tabcontent">
+        <div class="mb-2">
+          <small>2010-2012</small>
+          <h3>Lorem Ipsum</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting<br />
+            industry.
+          </p>
+        </div>
+        <div class="mb-2">
+          <small>2012-2014</small>
+          <h3>Enim Ad Anim</h3>
+          <p>
+            It is a long established fact that a reader will be distracted by<br />
+            the readable content of a page when looking at its layout. The
+            point<br />
+            of using Lorem Ipsum is that it has a more-or-less normal<br />
+            distribution of letters,
+          </p>
+        </div>
+        <div class="mb-2">
+          <small>2014-2022</small>
+          <h3>Ulamco</h3>
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random
+            text.<br />
+            It has roots in a piece of classical Latin literature from 45 BC,<br />
+            making it over 2000 years old. Richard McClintock, a Latin
+            professor<br />
+            at Hampden-Sydney College in Virginia, looked up one of the more<br />
+            obscure Latin words, consectetur
+          </p>
+        </div>
+      </div>
+
+      <div id="Skills" class="tabcontent">
+        <h3 style="margin-bottom: 1rem">Skills</h3>
+        <ul>
+          <li>Lorem Ipsum</li>
+          <li>Velaborem</li>
+          <li>Napkinistum</li>
+          <li>Lorem Ipsum</li>
+          <li>Pokem Piclum</li>
+        </ul>
+      </div>
+
+      <div class="footer mt-3">
+        <img
+          src="https://img.icons8.com/material-outlined/30/000000/instagram-new--v1.png"
+        />
+        <img
+          src="https://img.icons8.com/material-outlined/30/000000/facebook-new.png"
+        />
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/behance.png" />
+      </div>
+    </div>
+
+    <script>
+      function openCity(cityName, elmnt, decoration) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName('tabcontent');
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = 'none';
+        }
+        tablinks = document.getElementsByClassName('tablink');
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.textDecoration = '';
+        }
+        document.getElementById(cityName).style.display = 'block';
+        elmnt.style.textDecoration = decoration;
+      }
+
+      document.getElementById('defaultOpen').click();
+    </script>
+  </body>
+</html>
